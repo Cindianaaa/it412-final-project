@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 
-// Serve static files from the 'imgs' directory
 app.use('/imgs', express.static('imgs'));
 
 app.get('/', (req, res) => {
